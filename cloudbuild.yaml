@@ -7,7 +7,9 @@ steps:
         "us-central1-docker.pkg.dev/$PROJECT_ID/my-docker-repo/cloudrun1:latest",
         ".",
       ]
-   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 
-           'us-central1-docker.pkg.dev/$PROJECT_ID/my-docker-repo/cloudrun1:latest']
-    
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "us-central1-docker.pkg.dev/$PROJECT_ID/my-docker-repo/cloudrun1:latest",
+      ]
