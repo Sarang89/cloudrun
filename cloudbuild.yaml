@@ -4,8 +4,8 @@ steps:
       [
         "build",
         "-t",
-        "us-central1-docker.pkg.dev/$PROJECT_ID/cloudrun1:latest",
+        "us-central1-docker.pkg.dev/$PROJECT_ID/cloudrun:latest",
         ".",
       ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "us-central1-docker.pkg.dev/$PROJECT_ID/cloudrun1:latest"]
+    args: ["push", "us-central1-docker.pkg.dev/$PROJECT_ID/cloudrun:latest"]
