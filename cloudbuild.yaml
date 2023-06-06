@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-t",
-        "us-docker.pkg.dev/cloud-run-demo-388010/my-artifact-repo/cloudrun:latest"
+        "us-docker.pkg.dev/cloud-run-demo-388010/my-artifact-repo/cloudrun:latest",
         ".",
       ]
   - name: "gcr.io/cloud-builders/docker"
