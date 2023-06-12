@@ -22,6 +22,6 @@ steps:
       "us-docker.pkg.dev/cloud-run-demo-388010/my-artifact-repo/cloudrun:latest",
       "--region",
       "asia-south1",
-      "--platofrm",
+      "--platform",
       "managed",
     ]
