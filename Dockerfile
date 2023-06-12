@@ -1,6 +1,6 @@
 FROM node:lts-slim
 
-ENV PORT=$PORT
+ENV API_PORT=${API_PORT}
 
 WORKDIR /app
 
