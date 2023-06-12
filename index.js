@@ -14,12 +14,12 @@ app.use(multerMid.single("file"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.API_PORT || 3003;
 
 console.log(process.env.PORT);
 
 app.get("/", (req, res, next) => {
-  res.json("Hey there from inside Cloud Run using Artifact!");
+  res.json("Hey there from inside Cloud Run using Artifact! Now I hav been deployed to Cloud Run automatically!");
 });
 
 app.post("/upload-file", async (req, res, next) => {
