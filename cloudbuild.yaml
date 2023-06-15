@@ -6,6 +6,8 @@ steps:
         "-t",
         "us-docker.pkg.dev/cloud-run-demo-388010/my-artifact-repo/cloudrun:latest",
         ".",
+        "--build-arg",
+        "API_PORT=8080"
       ]
   - name: "gcr.io/cloud-builders/docker"
     args:
