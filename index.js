@@ -19,7 +19,9 @@ const PORT = process.env.API_PORT || 3003;
 console.log(process.env.PORT);
 
 app.get("/", (req, res, next) => {
-  res.json("Hey there from inside Cloud Run using Artifact! Now I have been deployed to Cloud Run automatically!");
+  res.json(
+    "Hey there from inside Cloud Run using Artifact! Now I have been deployed to Cloud Run automatically with permissions!"
+  );
 });
 
 app.post("/upload-file", async (req, res, next) => {
