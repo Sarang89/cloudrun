@@ -20,7 +20,7 @@ console.log(process.env.PORT);
 
 app.get("/", (req, res, next) => {
   res.json(
-    "Hey there from inside Cloud Run using Artifact! Now I have been deployed to Cloud Run automatically with permissions!"
+    "Hey there from inside Cloud Run using Artifact! Now I have been deployed to Cloud Run automatically with permissions including allow unauthenticated!"
   );
 });
 
