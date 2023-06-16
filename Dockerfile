@@ -1,4 +1,5 @@
 FROM node:lts-slim
+ARG API_PORT=3003
 
 ENV API_PORT=${API_PORT}
 
